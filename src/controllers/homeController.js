@@ -1,6 +1,8 @@
+const connection = require("../config/database")
+
 
 const getHomePage = (req, res) => {
-    res.send('Hello World!')
+    return res.render('home.ejs')
 }
 
 const getQuyIT = (req, res) => {
