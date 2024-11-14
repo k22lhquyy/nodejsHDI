@@ -9,7 +9,14 @@ const getQuyIT = (req, res) => {
     res.render('sample.ejs')
 }
 
+const postCreateNewUser = (req, res) => {
+    console.log(req.body)
+    res.send("create new user")
+
+}
+
 module.exports = {
     getHomePage,
-    getQuyIT
+    getQuyIT,
+    postCreateNewUser
 }
