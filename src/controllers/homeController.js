@@ -11,7 +11,16 @@ const getQuyIT = (req, res) => {
 
 const postCreateNewUser = (req, res) => {
     console.log(req.body)
-    res.send("create new user")
+    const { email, name, city } = req.body
+    connection.query(
+        `INSERT INTO Users(email, name, city) VALUES(?,?,?)`,
+        [email, name, city],
+        function(err, result){
+            console.log(result)
+            res.send("create new user success")
+        }
+    )
+    // res.send("create new user")
 
 }
 
