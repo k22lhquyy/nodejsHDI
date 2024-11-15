@@ -27,9 +27,14 @@ const postCreateNewUser = async (req, res) => {
 
 }
 
+const getUpdatePage = (req, res) => {
+    res.render('edit.ejs')
+}
+
 module.exports = {
     getHomePage,
     getQuyIT,
     postCreateNewUser,
-    getCreate
+    getCreate,
+    getUpdatePage
 }

@@ -11,7 +11,7 @@
 <body>
     <div class="topnav">
         <a class="active" href="/">Home</a>
-        <a href="/create">Create user</a>
+        <a href="/update">Create user</a>
     </div>
     <br>
     <!-- <%= JSON.stringify(listUsers)%> -->
@@ -41,7 +41,7 @@
                         <%= listUsers[i].city %>
                     </td>
                     <td>
-                        <button>Edit</button>
+                        <button><a href="/update">Edit</a></button>
                         <button>Delete</button>
                     </td>
                 </tr>
