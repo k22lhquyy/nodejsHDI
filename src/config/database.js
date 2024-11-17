@@ -14,7 +14,9 @@ const mongoose = require("mongoose")
 const connection = async () => {
     try {
         console.log("connection success")
-        await mongoose.connect('mongodb://root:123456@localhost:27017');
+        await mongoose.connect('mongodb://root:123456@localhost:27017', {
+            dbName: "HoiDanIT"
+        });
     } catch (error) {
         handleError(error);
     }
