@@ -8,7 +8,7 @@ router.get('/quyit', getQuyIT)
 
 router.get('/create', getCreate)
 
-router.get('/update', getUpdatePage)
+router.get('/update/:id', getUpdatePage)
 
 router.post('/create-user', postCreateNewUser)
 

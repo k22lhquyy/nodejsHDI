@@ -7,6 +7,15 @@ const getAllUser = async () => {
     return results;
 }
 
+
+const getUserById = async (id) => {
+    const [results, fields] = await connection.query(`
+        SELECT * FROM Users WHERE id = ${id}
+    `);
+    return results;
+}
+
 module.exports = {
-    getAllUser
+    getAllUser,
+    getUserById
 }

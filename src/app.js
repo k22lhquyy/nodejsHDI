@@ -15,6 +15,8 @@ configViewEngine(app);
 
 app.use('/',webRouter)
 
+connection()
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
